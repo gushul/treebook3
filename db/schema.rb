@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20140831201740) do
   end
 
   add_index "user_friendships", ["state"], name: "index_user_friendships_on_state"
+  add_index "user_friendships", ["user_id", "friend_id"], name: "index_user_friendships_on_user_id_and_friend_id"
 
   create_table "users", force: true do |t|
     t.string   "first_name"
