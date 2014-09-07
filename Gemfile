@@ -23,11 +23,17 @@ gem 'state_machine'
 #Use for states
 gem 'simple_form'
 #using for simple forms
+<<<<<<< HEAD
 
 # Bootstrap / Sass converter
 #gem 'bootstrap-sass', '~> 3.2.0'
 #gem 'sass-rails', '~> 4.0.3'
 
+=======
+gem 'sass-rails', '~> 4.0.3'
+# Use Uglifier as compressor for JavaScript assets
+gem 'bootstrap-sass', '~> 3.2.0'
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1
 
 gem 'paperclip'
 #Using for image uploads
@@ -70,4 +76,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'debugger', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+<<<<<<< HEAD
 #gem 'tzinfo-data', platforms: [:mingw, :mswin]
+=======
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1

@@ -10,17 +10,26 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
 
+<<<<<<< HEAD
  *= require bootstrap.min
  *= require bootstrap-theme.min
+=======
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1
  *= require_self
  *= require_tree .
  */
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1
 body {
 
 	padding-top: 40px;
 }
 
+<<<<<<< HEAD
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../assets/glyphicons-halflings-regular.eot');
@@ -29,3 +38,5 @@ body {
        url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), 
        url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+=======
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1

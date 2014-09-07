@@ -34,7 +34,11 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+<<<<<<< HEAD
   Paperclip.options[:command_path] = "/usr/bin/convert"
+=======
+  Paperclip.options[:command_path] = 'C:/Sites/ImageMagick'
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true

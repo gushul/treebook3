@@ -38,6 +38,11 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+<<<<<<< HEAD
+=======
+    bootstrap-sass (3.2.0.1)
+      sass (~> 3.2)
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1
     builder (3.2.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -108,6 +113,15 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+<<<<<<< HEAD
+=======
+    sass (3.2.19)
+    sass-rails (4.0.3)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.2.0)
+      sprockets (~> 2.8, <= 2.11.0)
+      sprockets-rails (~> 2.0)
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -136,6 +150,11 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+<<<<<<< HEAD
+=======
+    tzinfo-data (1.2014.6)
+      tzinfo (>= 1.0.0)
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -150,6 +169,10 @@ DEPENDENCIES
   autoprefixer-rails
   better_errors
   binding_of_caller
+<<<<<<< HEAD
+=======
+  bootstrap-sass (~> 3.2.0)
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1
   coffee-rails (~> 4.0.0)
   devise
   jbuilder (~> 2.0)
@@ -158,9 +181,17 @@ DEPENDENCIES
   paperclip
   pg
   rails (= 4.1.1)
+<<<<<<< HEAD
+=======
+  sass-rails (~> 4.0.3)
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1
   sdoc (~> 0.4.0)
   simple_form
   sqlite3
   state_machine
   turbolinks
+<<<<<<< HEAD
+=======
+  tzinfo-data
+>>>>>>> 7fe1ced5696fb78dc7b10b409f8ad56f5b7546f1
   uglifier (>= 1.3.0)
