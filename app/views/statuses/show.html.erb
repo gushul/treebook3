@@ -1,0 +1,24 @@
+<br><br><br><br>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+ 
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @status.content %>
+</p>
+
+
+<% if @status.document && @status.document.attachment? %>
+<p>
+	This is an example
+	<%= link_to @status.document.attachment_file_name, @status.document.attachment.url %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', edit_status_path(@status) %> |
+<%= link_to 'Back', statuses_path %>
