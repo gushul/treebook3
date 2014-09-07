@@ -1,0 +1,36 @@
+<h1>Here are all of your friends</h1>
+
+<% @user_friendships.each do |friendship| %>
+	<!-- How do we know that the friendship has a .friend method? -->
+	<% friend = friendship.friend %>
+
+	<div id = "<%= dom_id(friendship) %>" class="friend row">
+		<div class="span1">
+			<%= link_to image_tag(friend.gravatar_url), profile_path(friend) %>
+		</div>
+
+		<div class="span7">
+			<strong><%= friend.full_name %></strong>
+			<br />
+			
+			<% if friendship.pending? %>
+				<em>Friendship is pending</em>
+				<%= link_to 'Cancel Request', user_friendship_path(friendship), :method => :delete %>
+				<%= link_to "Accept friendship", accept_user_friendship_path(friendship), method: :put %>.
+			<% end %>
+
+			<% if friendship.requested? %>
+				<em>Friendship requested</em>
+				<%= link_to "Accept friendship", accept_user_friendship_path(friendship), method: :put %>.
+				<%= link_to 'Reject', user_friendship_path(friendship), :method => :delete %>
+			<% end %>
+
+			<% if friendship.accepted? %>
+				<em>You are friends</em>
+				<%= link_to "Update friendship", edit_user_friendship_path(friendship) %>.
+			<% end %>
+
+		</div>
+	</div>
+<% end %>
+
