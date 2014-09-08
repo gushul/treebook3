@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140831201740) do
+ActiveRecord::Schema.define(version: 20140908161605) do
 
   create_table "documents", force: true do |t|
     t.integer  "user_id"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140831201740) do
     t.string   "attachment_content_type"
     t.integer  "attachment_file_size"
     t.datetime "attachment_updated_at"
+    t.integer  "status_id"
   end
 
   add_index "documents", ["user_id"], name: "index_documents_on_user_id"
@@ -30,7 +31,6 @@ ActiveRecord::Schema.define(version: 20140831201740) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
-    t.integer  "document_id"
   end
 
   add_index "statuses", ["user_id"], name: "index_statuses_on_user_id"

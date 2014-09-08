@@ -1,6 +1,6 @@
 class Status < ActiveRecord::Base
 	belongs_to :user
-	belongs_to :document
+	has_one :document
 
 	accepts_nested_attributes_for :document
 
