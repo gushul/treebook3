@@ -23,7 +23,7 @@ gem 'simple_form'
 #using for simple forms
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
-gem 'bootstrap-sass', '~> 3.2.0'
+#gem 'bootstrap-sass', '~> 3.2.0'
 gem 'paperclip'
 #Using for image uploads
 
